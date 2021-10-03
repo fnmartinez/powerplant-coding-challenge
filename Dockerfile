@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/* /tmp/* /var/tmp/*
 
 RUN if [ $DEBUG == 'TRUE' ]; then \
-        LOG_LEVEL='debug';
+        LOG_LEVEL='debug'; \
     fi
 
 ADD /spaas $APP_DIR/spaas/
